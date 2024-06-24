@@ -32,31 +32,31 @@ The dataset is first analyzed using various statistical measures and visualized 
 
  Age Distribution
 
-![Age Distribution](images/age_distribution.png)
+<img src="images/age_distribution.png" alt="age_distribution.png" width="300" height="300">
 
 ## Sex Distribution
 
-![Sex Distribution](images/sex_distribution.png)
+<img src="images/sex_distribution.png" alt="sex_distribution.png" width="300" height="300">
 
 ## BMI Distribution
 
-![BMI Distribution](images/bmi_distribution.png)
+<img src="images/bmi_distribution.png" alt="bmi_distribution.png" width="300" height="300">
 
 ## Number of Children
 
-![Number of Children](images/children_distribution.png)
+<img src="images/children_distribution.png" alt="children_distribution.png" width="300" height="300">
 
 ## Smoker
 
-![Smoker](images/smoker_distribution.png)
+<img src="images/smoker_distribution.png" alt="smoker_distribution.png" width="300" height="300">
 
 ## Region
 
-![Region](images/region_distribution.png)
+<img src="images/region_distribution.png" alt="region_distribution.png" width="300" height="300">
 
 ## Charges Distribution
 
-![Charges Distribution](images/charges_distribution.png)
+<img src="images/charges_distribution.png" alt="Charges Distribution" width="300" height="300">
 
 ## Data Preprocessing
 
@@ -78,7 +78,7 @@ regressor = LinearRegression()
 
 # Training the model
 regressor.fit(X_train, Y_train)
-
+```
 
 ## Model Evaluation
 
