@@ -1,6 +1,6 @@
 Here's a `README.md` file based on the provided code and data for the insurance price prediction project:
 
-```markdown
+
 # Insurance Price Prediction
 
 This project aim to predict insurance charges based on various factors such as age, sex, BMI, number of children, smoking status, and region. The model is built using Linear Regression from the scikit-learn library.
@@ -78,7 +78,7 @@ regressor = LinearRegression()
 
 # Training the model
 regressor.fit(X_train, Y_train)
-```
+
 
 ## Model Evaluation
 
