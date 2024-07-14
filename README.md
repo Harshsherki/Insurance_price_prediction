@@ -1,101 +1,42 @@
-Here's a `README.md` file based on the provided code and data for the insurance price prediction project:
+# Insurance Charges Prediction
 
-
-# Insurance Price Prediction
-
-This project aim to predict insurance charges based on various factors such as age, sex, BMI, number of children, smoking status, and region. The model is built using Linear Regression from the scikit-learn library.
+This repository contains a project for predicting insurance charges based on various factors using multiple regression techniques.
 
 ## Dataset
 
-The dataset used in this project contains information on insurance charges along with various features:
-
-- `age`: Age of the individual
-- `sex`: Gender of the individual (male/female)
-- `bmi`: Body Mass Index
-- `children`: Number of children/dependents
-- `smoker`: Smoking status (yes/no)
-- `region`: Region of residence (southeast/southwest/northeast/northwest)
-- `charges`: Medical insurance charges
-
-## Requirements
-
-- numpy
-- pandas
-- matplotlib
-- seaborn
-- scikit-learn
-
-
-## Data Analysis and Visualization
-
-The dataset is first analyzed using various statistical measures and visualized using plots to understand the distribution of different features.
-
- Age Distribution
-
-<img src="images/age_distribution.png" alt="age_distribution.png" width="300" height="300">
-
-## Sex Distribution
-
-<img src="images/sex_distribution.png" alt="sex_distribution.png" width="300" height="300">
-
-## BMI Distribution
-
-<img src="images/bmi_distribution.png" alt="bmi_distribution.png" width="300" height="300">
-
-## Number of Children
-
-<img src="images/children_distribution.png" alt="children_distribution.png" width="300" height="300">
-
-## Smoker
-
-<img src="images/smoker_distribution.png" alt="smoker_distribution.png" width="300" height="300">
-
-## Region
-
-<img src="images/region_distribution.png" alt="region_distribution.png" width="300" height="300">
-
-## Charges Distribution
-
-<img src="images/charges_distribution.png" alt="Charges Distribution" width="300" height="300">
+The dataset used in this project is from Kaggle and can be found [here](https://www.kaggle.com/mirichoi0218/insurance?select=insurance.csv).
 
 ## Data Preprocessing
 
-The categorical columns `sex`, `smoker`, and `region` are encoded to numerical values for model training.
+The preprocessing steps include:
 
-## Model Training
+1. Importing necessary libraries.
+2. Loading the dataset.
+3. Data exploration and analysis.
+4. Handling missing values (if any).
+5. Encoding categorical data.
+6. Feature scaling.
 
-The Linear Regression model is trained on the preprocessed data.
+## Model Building
 
-```python
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
+Three different regression models are built to predict insurance charges:
 
-# Splitting the data into Training data & Testing Data
-X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=2)
+1. Multiple Linear Regression
+2. Random Forest Regression
+3. XGBoost Regression
 
-# Loading the Linear Regression model
-regressor = LinearRegression()
+### Steps:
 
-# Training the model
-regressor.fit(X_train, Y_train)
-```
-
-## Model Evaluation
-
-The model's performance is evaluated using the R-squared value.
-
-
-## Predictive System
-
-A predictive system is built to estimate insurance costs based on user input.
-
+1. Split the data into training and testing sets.
+2. Apply feature scaling.
+3. Train and evaluate the models.
+4. Compare the performance of the models using the R-squared score.
 
 ## Results
 
-- R squared value for training data: 0.7515
-- R squared value for test data: 0.7447
-
-## Conclusion
-
-The Linear Regression model performs reasonably well in predicting insurance charges. Future improvements could include trying more complex models and feature engineering to improve the prediction accuracy.
+| Model                      | R-squared Score |
+|----------------------------|-----------------|
+| Multiple Linear Regression | 0.7999          |
+| Random Forest Regression   | 0.8816          |
+| XGBoost Regression         | 0.8954          |
 
