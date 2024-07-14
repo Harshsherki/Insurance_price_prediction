@@ -21,7 +21,7 @@ The preprocessing steps include:
 
 Three different regression models are built to predict insurance charges:
 
-1. Multiple Linear Regression
+1. Linear Regression
 2. Random Forest Regression
 3. XGBoost Regression
 
